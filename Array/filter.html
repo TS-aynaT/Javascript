@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Function</title>
+</head>
+<body style="background: cornflowerblue;">
+    <h2>Filter Function in Array</h2>
+    <p>
+        Filter function helps to filter data with perticular condition
+    </p>
+    <br></br>
+    <p style="color: brown; font-style: oblique;"> Orignal array:</p>
+    <p id="id"></p>
+    <br>
+    <p style="width: auto; color: brown;"> After Filter method</p>
+    <p id="demo">
+        
+    </p>
+    <script>
+        const ar=[12,11,4,23,98,6,90];
+        const ar2= ar.filter(f1);
+        document.getElementById("id").innerHTML= ar;
+        document.getElementById("demo").innerHTML= ar2;
+        function f1(value)
+        {
+            return value>20;
+        }
+    </script>
+    
+</body>
+</html>

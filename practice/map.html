@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>MAP in Javascript</h2>
+    <br>
+    <p>Creating a map obeject by new function. <br> <br> Syntax: const map_name = new Map([]);</p>
+    <p id="m1"></p>
+    <p>Size of Map:</p>
+    <p id="m2"></p>
+    <p>set(): function used to add new value or edit existing value.<br> After using set function
+        size of Map.</p>
+    <p id="m3"></p>
+    <p>has: It checks whether the following element is present or not. It gives boolean value.</p>
+    <p id="m4"></p>
+    <p>entities(): Used to show all the elements in Map.</p>
+    <p id="m5"></p>
+
+
+    <script>
+        const m1 = new Map([["Rent",7000],["Food", 3000],["Travel Allowance",2000]]);
+        document.getElementById("m1").innerHTML = m1.get("Rent");
+        document.getElementById("m2").innerHTML = m1.size;
+
+        m1.set("Utensils",1000);
+        m1.set("fruits",500);
+        document.getElementById("m3").innerHTML = m1.size;
+        document.getElementById("m4").innerHTML = m1.has("Rent");
+         
+        let txt= " ";
+        for( var x of m1.entries())
+        {
+            txt += x+"<br>";
+        }
+        document.getElementById("m5").innerHTML = txt;
+    </script>
+    
+</body>
+</html>

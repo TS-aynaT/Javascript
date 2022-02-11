@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    <h1>Set in Js</h1>
+    <p>A Javascript set is a collection of unique data. <br>
+    Each element can only occur at once: </p>
+    <p> new Set(): Creates a new set</p>
+    <p id="s1"></p>
+    <p> add(): Add a new element in set</p>
+    <p id="s2"></p>
+    <p> forEach: calls each funtion of the set.</p>
+    <p id="s3"></p>
+    <p> values: Returns each element of set</p>
+    <p id="s4"></p>
+    <script>
+        const letters = new Set(['a','A','b','B']);
+        document.getElementById("s1").innerHTML= letters.size;
+        
+        letters.add('c');
+        letters.add('C');
+        document.getElementById("s2").innerHTML= letters.size;
+
+        var txt=" ";
+        letters.forEach(function(value) 
+        {
+             return txt += value +"<br>";
+         })
+         document.getElementById("s3").innerHTML= txt;
+
+         var t=" "
+         for( const x of letters.values())
+         {
+             t += x +"<br>";
+             document.getElementById("s4").innerHTML= t;
+         }
+
+    </script>
+</body>
+</html>

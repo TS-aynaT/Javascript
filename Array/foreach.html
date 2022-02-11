@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For each</title>
+</head>
+<body>
+    <h1>JavaScript array.forEach() function</h1>
+    <p> Used to call each element in array</p>
+    <p id="demo"></p>
+    <script>
+        const ar=[2,41,44,11,76,23,98]
+        let txt=" ";
+        ar.forEach(f1);
+        document.getElementById("demo").innerHTML= txt;
+        function f1(value, index, array)
+        {
+            txt += value + "<br>";
+        }
+    </script>
+</html>
